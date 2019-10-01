@@ -18,7 +18,7 @@ abs_dfold = os.getcwd()+'/'+dest_fold
 if (not os.path.exists( abs_dfold )):
     os.mkdir( abs_dfold )
 else:
-    #do whatever id folder exists
+    #do whatever if folder exists
     print ('Folder already exists.')
     pass
 
