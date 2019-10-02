@@ -16,7 +16,7 @@ if not os.path.exists(discrete):
 
 #crea cartelle tematiche
 
-landcover=['water-seasonal',]#'water-permanent', 'snow', ]
+landcover=['urban','tree','shrub','moss','grass','bare','crops','forest','water-seasonal','water-permanent', 'snow']
 if not os.path.exists(themes_folder):
     os.mkdir(themes_folder)
 
@@ -34,7 +34,7 @@ for d in folders:
                         #shutil.move(af, dest)
                         shutil.copy(af, dest)
                         print(af + ' moved to ' + dest)
-
+                        
             if '_discrete-classification_' in af:
                 dest = os.path.join(discrete, os.path.basename(af))
                 #shutil.move(af, dest)
