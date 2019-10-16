@@ -43,8 +43,8 @@ for d in folders:
             for lc in landcover:
                 if lc in af:
                     dest = os.path.join(themes_folder, lc, os.path.basename(af))
-                    shutil.move(af, dest)
-                    # shutil.copy(af, dest)
+                    #shutil.move(af, dest)
+                    shutil.copy(af, dest)
                     print('LC class ' + af + ' moved to ' + dest)
         if 'StdDev' in af:
             for st in landcover:
